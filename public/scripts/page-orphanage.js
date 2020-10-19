@@ -7,8 +7,9 @@ const options = {
   zoomControl: false,
 };
 //GET VALUES
-const spanLat = document.querySelector("span[data-lat").dataset.lat
-const spanLng = document.querySelector("span[data-lng").dataset.lgn
+const locationSpan = document.querySelector("#location");
+const lat = locationSpan.dataset.lat;
+const lng = locationSpan.dataset.lng;
 
 //CREATE MAP
 const map = L.map("mapid", options).setView([lat, lng], 16);
