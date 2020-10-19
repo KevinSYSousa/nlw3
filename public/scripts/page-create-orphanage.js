@@ -82,3 +82,13 @@ function toggleSelect(event) {
   const input = document.querySelector('[name="open_on_weekends"]')
   input.value = button.dataset.value
 }
+
+function validate(event) {
+
+  const needsLatAndLng = true;
+  if(needsLatAndLng) {
+    event.preventDefault()
+    alert("Selecione a localização")
+  }
+  
+}

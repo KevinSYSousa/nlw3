@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,7 +39,7 @@
         </footer>
       </aside>
       <main class="animate-appear with-sidebar">
-        <form action="">
+        <form action="save-orphanage" method="POST">
           <fieldset>
             <legend>Dados</legend>
             <div class="map-container">
@@ -64,7 +64,7 @@
             </div>
             <div class="input-block">
               <label for="whatsapp">Número de whatsapp</label>
-              <input id="whatsapp" name="whatsapp" required />
+              <input id="whatsapp" name="whatsapp" type="number" required />
             </div>
             <div class="input-block images">
               <label for="images">Foto</label>
@@ -74,6 +74,7 @@
                     name="images"
                     placeholder="Cole o link da foto aqui"
                     required
+                    type="url"
                   />
                   <span onclick="deleteField(event)"
                     ><img
